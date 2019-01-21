@@ -22,3 +22,15 @@ def task_3(word):
 
                 
 task_3('dad')
+task_3('privet')
+
+def task_4(a,b):
+        x = 0
+        for i in a:
+                if i == b:
+                        x = x + 1
+        print('task#4 - ',x)
+
+task_4([1,2,3,4,4,4,4,4,4], 4)
+        
+        
