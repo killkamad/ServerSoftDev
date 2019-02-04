@@ -1,0 +1,13 @@
+python manage.py shell
+from polls.models import Question, Choice
+from django.utils import timezone
+
+Question.objets.all()
+Choice.objets.all()
+
+question = Question(question_text="Are u retarded?", pub_date=timezone.now())
+question.save
+
+question = Question.objects.get(pk=1)
+question.choice_set.create(choice_text="Maybe",votes=12)
+
