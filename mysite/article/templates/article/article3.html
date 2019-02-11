@@ -1,0 +1,21 @@
+{% extends 'article/base.html' %}
+
+{% block content %}
+    <h1>MDuis sed nulla</h1>
+    <p class="article">Duis sed nulla aliquet, finibus libero quis, scelerisque velit. Vivamus pulvinar enim lorem, non finibus sapien molestie id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas a pulvinar ex. Pellentesque luctus justo non nisi bibendum iaculis. Nam pharetra lectus libero, non mattis ligula mattis vel. Donec sem mauris, scelerisque cursus ultricies sit amet, interdum at neque. Etiam aliquam erat non ipsum laoreet, sed commodo odio fermentum. Cras urna augue, rhoncus id felis quis, venenatis maximus mi. In hac habitasse platea dictumst. Quisque ac magna sagittis, congue ipsum quis, iaculis augue. Maecenas rhoncus ipsum velit, nec pellentesque est dapibus vitae. Etiam placerat, eros nec finibus imperdiet, elit enim tristique lectus, vitae molestie tellus sapien et libero.</p>
+        {% if user.is_authenticated %}
+            <a href="{% url 'com_new3' %}" class="top-menu">Добавить комментарий...</a>
+        {% endif %}
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            <p class="author"> Автор: {{ post.author}} - {{ post.published_date }}</p>
+                        </div>
+                        <h1><a href="{% url 'com_detail3' pk=post.pk %}">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+        {% if user.is_authenticated %}
+            <a class="btn btn-default" id="change" href="{% url 'com_edit3' pk=post.pk %}">Изменить</a>
+        {% endif %}
+                    </div>
+                {% endfor %}
+{% endblock %}

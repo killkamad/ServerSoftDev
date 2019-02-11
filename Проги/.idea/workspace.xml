@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe89ae8e-8f09-49ea-b819-258da5f42b6b" name="Default" comment="" />
+    <list default="true" id="daf6151c-4234-4573-bf01-96612b59556e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/da.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -19,10 +36,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="924" />
-    <option name="height" value="980" />
+    <option name="y" value="93" />
+    <option name="width" value="771" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -34,8 +50,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="Articles_w_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Articles_w_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Проги" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Проги" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -45,7 +61,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -61,40 +77,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Articles_w_backend" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Articles_w_backend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fe89ae8e-8f09-49ea-b819-258da5f42b6b" name="Default" comment="" />
-      <created>1549891061925</created>
+      <changelist id="daf6151c-4234-4573-bf01-96612b59556e" name="Default" comment="" />
+      <created>1549633187012</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1549891061925</updated>
+      <updated>1549633187012</updated>
     </task>
     <servers />
   </component>
@@ -102,28 +94,28 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32897604" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="R Graphics" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +123,8 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/da.py" />
   </component>
 </project>

@@ -1,0 +1,21 @@
+{% extends 'article/base.html' %}
+
+{% block content %}
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non tortor quis nibh accumsan dignissim. Duis gravida, ex nec gravida commodo, mauris magna suscipit est, id pellentesque orci sem vitae nibh. Nullam purus lorem, consequat id purus sit amet, semper luctus nisl. Etiam nec mauris faucibus, euismod ligula non, pellentesque arcu. Nullam ullamcorper leo feugiat mollis imperdiet. Phasellus efficitur posuere augue, in mattis nisi pulvinar a. Donec ornare eleifend varius. Sed eget ipsum at lectus rhoncus posuere non sit amet eros. Duis quis ligula diam. Aliquam at posuere metus. Phasellus eu lectus condimentum, vehicula lacus non, convallis augue. Donec vehicula leo quam, et fringilla enim aliquam eget. Ut massa lectus, fermentum a neque sed, bibendum gravida dui. Nunc luctus, nibh in volutpat accumsan, sem magna gravida nisl, sed ultricies diam libero ut leo. Duis lorem lectus, blandit quis ante sed, venenatis bibendum ligula.</p>
+        {% if user.is_authenticated %}
+            <a href="{% url 'com_new' %}" class="top-menu">Добавить комментарий...</a>
+        {% endif %}
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            <p class="author"> Автор: {{ post.author}} - {{ post.published_date }}</p>
+                        </div>
+                        <h1><a href="{% url 'com_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+        {% if user.is_authenticated %}
+            <a class="btn btn-default" id="change" href="{% url 'com_edit' pk=post.pk %}">Изменить</a>
+        {% endif %}
+                    </div>
+                {% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'article/base.html' %}
+
+{% block content %}
+    <h1>Morbi arcu erat</h1>
+    <p class="article">Morbi arcu erat, elementum et nisi vel, pulvinar vestibulum nibh. Fusce ac efficitur arcu, auctor imperdiet magna. Aenean sapien nisi, malesuada sed bibendum eget, bibendum a urna. Cras volutpat urna eu efficitur tempus. Donec sed magna nibh. Mauris lacinia odio in erat laoreet volutpat. Nullam elementum tellus non orci fringilla, vitae rutrum ipsum dignissim. Etiam a massa et ligula euismod efficitur. Proin vel luctus sapien, eget bibendum odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed semper dui et sollicitudin mollis. Praesent efficitur lobortis pretium. Aliquam vitae sapien sed nibh faucibus imperdiet sit amet id mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        {% if user.is_authenticated %}
+            <a href="{% url 'com_new2' %}" class="top-menu">Добавить комментарий...</a>
+        {% endif %}
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            <p class="author"> Автор: {{ post.author}} - {{ post.published_date }}</p>
+                        </div>
+                        <h1><a href="{% url 'com_detail2' pk=post.pk %}">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+        {% if user.is_authenticated %}
+            <a class="btn btn-default" id="change" href="{% url 'com_edit2' pk=post.pk %}">Изменить</a>
+        {% endif %}
+                    </div>
+                {% endfor %}
+{% endblock %}

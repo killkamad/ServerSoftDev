@@ -1,0 +1,109 @@
+body{
+    background-color: #313433;
+}
+.art{
+    display:flex;
+    flex-flow: column ;
+    background-color: #4b4f4a;
+    border:2px solid black;
+    width:10%;
+    height: 250%;
+    color:white;
+    position: absolute;
+    left:0;
+    top:0;
+
+}
+
+.author{
+    color:gold;
+    font-size: 15px;
+}
+
+.art a{
+    color: #ff4430;
+    margin-left: 15px;
+}
+.content{
+    display:flex;
+    flex-flow: column ;
+    width:50%;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 5px;
+    height:100%;
+    color:white;
+
+}
+
+.content a{
+    color: #ff4430;
+}
+
+#change{
+    margin-left:91.5%;
+    color:black;
+}
+
+.ssilki a{
+    color:white;
+    text-decoration:underline lightgray;
+
+}
+.ssilki li{
+    margin-top:5px;
+    font-size: 17px;
+}
+
+.container{
+    width: 100%;
+    height:100%;
+    display: flex;
+}
+
+.post{
+    padding: 10px;
+    border:1px dashed silver;
+    margin-top: 20px;
+    border-radius: 5px;
+    color:white;
+}
+.post-form textarea, input, select{
+    color:black;
+    width:700px;
+    font-size:23px;
+}
+.post-form label {
+    font-size: 27px;
+}
+.post-form select{
+    width:100px;
+    height:30px;
+}
+.post-form textarea{
+    height:300px;
+}
+.post-form{
+    margin:auto;
+    margin-left: 36%;
+}
+
+.article{
+    font-size: 23px;
+    padding: 15px;
+    margin:0;
+}
+.top-menu{
+    font-size: 25px;
+    border:2px solid red;
+    width:250px;
+    border-radius:5px;
+    padding: 15px;
+    text-decoration: none;
+    margin-left: 80%;
+
+}
+
+.h2{
+    font-size: 30px;
+}
