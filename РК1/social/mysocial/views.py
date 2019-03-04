@@ -53,7 +53,7 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Вы зарегестрировались как {username} и можете войти в свой аккаунт!')
+            # messages.success(request, f'Вы зарегестрировались как {username} и можете войти в свой аккаунт!')
             return redirect('login')
     else:
         form = UserRegisterForm()

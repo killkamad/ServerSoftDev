@@ -205,3 +205,14 @@ footer{
     margin-top: 15px;
     padding: 20px;
 }
+
+.headerButton a{
+    margin-left: 25px;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+
+.headerButton a:hover{
+    background-color: lightblue;
+}
