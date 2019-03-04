@@ -1,3 +1,4 @@
+from almau.models import Person, Group, Membership
 p1 = Person(name='Kirill1')
 p1.save()
 p2 = Person(name='Dima')
