@@ -37,6 +37,7 @@ class ViewTestCase(TestCase):
 
         # Since user model instance is not serializable, use its Id/PK
         self.bucketlist_data = {'name': 'Go to Ibiza', 'owner': user.id}
+        #Сделано Маштаковым Кириллом
         self.response = self.client.post(
             reverse('create'),
             self.bucketlist_data,
