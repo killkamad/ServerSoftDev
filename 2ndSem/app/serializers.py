@@ -24,6 +24,11 @@ class TokenSerializer(serializers.Serializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
+
+    owner = serializers.ReadOnlyField(source='owner.username')
+
     class Meta:
+
         model = User
         fields = ("username", "email")
+        read_only_fields = ('date_created', 'date_modified')
